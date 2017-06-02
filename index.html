@@ -120,8 +120,8 @@
 		var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
 			url: '//assets.agi.com/stk-terrain/world',
 			//海を表示しないときは以下をfalseに
-			requestWaterMask: true,
-			requestVertexNormals: true
+			requestWaterMask: false,
+			requestVertexNormals: false
 		});
 		viewer.terrainProvider = cesiumTerrainProviderMeshes;
 
@@ -247,7 +247,7 @@
 		var kmlDataArray = [];
 		//KMLデータを登録．kmzでもOK
 		kmlDataArray[0] = new kmlData("GFCI 9_21", 'data/kml/gfci9_21.kml');
-		
+
 
 		//kmlDataArray[0] = new kmlData("GFCI 1", 'data/kml/gfci1.kml');
 		//kmlDataArray[0] = new kmlData("GFCI 13", 'data/kml/gfci13.kml');
